@@ -40,7 +40,7 @@ export default class VideoPlayer extends React.Component<VideoPlayerPropsInferfa
     return (
       <div className="c-player">
         <div className="c-player__screen" data-vjs-player="true">
-          <video ref={(node: HTMLVideoElement) => this.videoNode = node} className="video-js" />
+          <video ref={(node: HTMLVideoElement) => this.videoNode = node} autoPlay className="video-js" />
         </div>
       </div>
     );
