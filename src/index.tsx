@@ -16,7 +16,10 @@ const videoJsOptions = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <VideoPlayer videoJsOptions={videoJsOptions}/>
+    <div className="web-container">
+      <VideoPlayer videoJsOptions={videoJsOptions}/>
+    </div>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
