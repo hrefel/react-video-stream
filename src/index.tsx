@@ -8,7 +8,6 @@ import VideoPlayer from './App';
 const videoJsOptions = {
   autoplay: true,
   controls: true,
-  autoplay: true,
   sources: [{
     src: 'http://172.16.201.201:8080/hls/hello.m3u8',
     type: 'application/x-mpegURL'
