@@ -32,15 +32,12 @@ export default class VideoPlayer extends React.Component<VideoPlayerPropsInferfa
       this.player.dispose();
     }
   }
-
-  // wrap the player in a div with a `data-vjs-player` attribute
-  // so videojs won't create additional wrapper in the DOM
-  // see https://github.com/videojs/video.js/pull/3856
+  
   render() {
     return (
       <div className="c-player">
         <div className="c-player__screen" data-vjs-player="true">
-          <video ref={(node: HTMLVideoElement) => this.videoNode = node} autoPlay className="video-js" />
+          <video ref={(node: HTMLVideoElement) => this.videoNode = node} autoPlay={true} className="video-js" />
         </div>
       </div>
     );

@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import VideoPlayer from './App';
+import { VideoJsPlayerOptions } from 'video.js';
 
-const videoJsOptions = {
+const videoJsOptions: VideoJsPlayerOptions = {
   autoplay: true,
+  liveui: true,
+  responsive: true,
   controls: true,
   sources: [{
-    src: 'http://172.16.201.201:8080/hls/hello.m3u8',
+    src: 'http://play.rsabhk.co.id/live/hello.m3u8',
     type: 'application/x-mpegURL'
   }]
 };
